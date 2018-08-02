@@ -1,0 +1,11 @@
+# Place your Todoist API token here. For more info see this page: https://todoist.com/prefs/integrations
+
+TODOIST_API_ENDPOINT=https://beta.todoist.com/API/v8
+TODOIST_API_TOKEN=
+# Add your projects here that you'd like to filter,separated by commas
+TODOIST_FILTER_PROJECTS="ProjectA,ProjectB,ProjectC"
+
+###################
+# CLIENT SETTINGS #
+###################
+CLIENT_PORT=8000
