@@ -12,7 +12,12 @@ app.use(cors())
 app.use('/todoist', TodoistRouter)
 app.use('/alarm', SleepAsAndroidRouter)
 
-let port = process.env.CLIENT_PORT || 3000;
+let port;
+if (process.env.HEROKU_DEPLOY) {
+    port = process.env.PORT;
+} else {
+    port = process.env.CLIENT_PORT || 3000;
+}
 
 
 
