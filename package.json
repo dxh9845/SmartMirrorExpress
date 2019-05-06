@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "nodemon app.js",
     "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +19,8 @@
     "cors": "^2.8.4",
     "dotenv": "^6.0.0",
     "express": "^4.16.3",
-    "morgan": "^1.9.0"
-  }
+    "morgan": "^1.9.0",
+    "snyk": "^1.161.1"
+  },
+  "snyk": true
 }
